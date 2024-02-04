@@ -1,0 +1,111 @@
+.card {
+    flex: 1 1 50%;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px black;
+    width: 250px;
+    max-height: 550px;
+    // display: flex;
+    // flex-direction: column;
+    margin: 0 auto;
+    &:hover{
+        box-shadow: 1px 1px 10px black;
+    }
+
+}
+
+.card-link {
+    // background-color: green;
+    text-decoration: none;
+    padding: 10px;
+    height: 100%;
+}
+
+.card-body {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 2fr 0.5fr 0.5fr; 
+    gap: 10px 10px; 
+    grid-template-areas: 
+      "."
+      "."
+      "."; 
+
+}
+
+.card-body__img{
+    img {
+        height: 200px;
+        width: 200px;
+        border-radius: 15px;
+    }
+}
+.card-body__name{
+    flex: 1 1 auto;
+    
+    h3{
+        
+        color: black;   
+       margin: 0px 13px;
+    }
+
+}
+.card-body__desc{
+    h6{
+    
+        color: black;   
+        margin: 10px 0px 0px 0px;
+        padding: 0px 15px 50px 15px;
+       
+        
+    }
+
+}
+.card-btns {
+    position: absolute;
+    
+    bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+
+}
+
+.btn {
+    min-width: 70px;
+    margin: 5px 10px;
+    z-index: 10;
+    padding: 8px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px black;
+    &:hover{
+        box-shadow: 1px 1px 10px black;
+    }
+}
+.btn-like{
+    background-color: rgb(212, 235, 212);
+    &:hover{
+        background-color: rgb(175, 233, 175);
+    }
+}
+.btn-delete{
+    background-color:rgb(224, 199, 199);
+    &:hover{
+        background-color: rgb(224, 165, 165);
+    }
+}
+
+.btn__active{
+    background-color: rgb(151, 236, 151);
+  
+}
+
+.cards__active{
+    background-color: rgb(217, 240, 217);
+    box-shadow: 1px 1px 10px rgb(98, 238, 98);
+}

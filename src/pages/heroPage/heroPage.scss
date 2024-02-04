@@ -1,0 +1,43 @@
+
+
+.hero-page__container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    
+}
+.hero-page__link-back{
+    text-align: end;
+
+}
+
+.hero-page__back{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 400;
+   &:hover{
+    color: rgb(83, 66, 143);
+   }
+    
+}
+
+.hero-page__block{
+    flex: 1 1 50%;
+    text-align: start;
+
+    img{
+        height: 300px;
+        width: 300px;
+        border-radius: 15px;    
+    }
+    h4{
+        font-size: 25px;
+        font-weight: 400;
+        margin: 10px 0px;
+    }
+    h5{
+        font-size: 18px;
+        font-weight:400;
+        margin: 10px 0px;
+    }
+}
