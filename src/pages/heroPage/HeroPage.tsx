@@ -35,7 +35,7 @@ const HeroPage = () => {
                     <h5><strong>{description}</strong></h5>
                 </div>
                 <div className="hero-page__block block-comics">
-                    <p>Списовк комиксов:</p>
+                    <p>Список комиксов:</p>
                     {renderComicsList.length > 1 ? renderComicsList : <h5>Упс.... не найдено комиксов</h5>}
                 </div>
             </div>
