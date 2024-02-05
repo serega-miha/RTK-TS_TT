@@ -6,7 +6,7 @@ import HeroPage from './pages/heroPage/HeroPage';
 import Page404 from './components/404/404';
 
 function App() {
-  return (
+  return ( 
     <div className="App">
       <Header />
       <Routes>
