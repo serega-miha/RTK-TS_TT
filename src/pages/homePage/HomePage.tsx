@@ -2,6 +2,7 @@ import { useGetAllHeroesQuery } from "../../store/api/heroes";
 import HeroCard from "../../components/heroCard/HeroCard";
 import './homePage.scss';
 import { useState } from "react";
+import Spinner from "../../components/spinner/spinner";
 
 
 const HomePage = () => {
@@ -22,9 +23,11 @@ const HomePage = () => {
     }
 
     function addIdLike(id?: number, like?: boolean) {
+        console.log(id, like);
         if (!like) {
             return setArrIdLike(arrIdLike => [...arrIdLike, id])
         } else if (like) {
+        
             let newArr = arrIdLike;
             newArr.forEach(function (item, index, object) {
                 if (item === id) {
@@ -41,7 +44,8 @@ const HomePage = () => {
 
     let content;
     if (isLoading) {
-        content = <h2>Loading...</h2>
+        content = <Spinner />
+        return content;
     } else if (isSuccess) {
         let newData = allHeroes.data.results.filter(item => !arrIdDelete.includes(item.id));
         newData = showLike ? newData.filter(item => arrIdLike.includes(item.id)) : newData;
@@ -54,6 +58,7 @@ const HomePage = () => {
         })
     } else if (error) {
         content = <h2>Error...</h2>
+        return content;
     }
 
     return (
@@ -65,9 +70,13 @@ const HomePage = () => {
                     <span>Показать карточки Like</span>
                 </label>
             </div>
-            <div className="cards-list">
-                {content}
+            <div className="cards-content">
+                <div className="cards-list">
+                    {content}
+                </div>
+
             </div>
+
         </div>
 
     )

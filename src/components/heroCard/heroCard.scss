@@ -12,7 +12,7 @@
     &:hover{
         box-shadow: 1px 1px 10px black;
     }
-
+    transition: all 0.5s;
 }
 
 .card-link {
@@ -64,7 +64,7 @@
 }
 .card-btns {
     position: absolute;
-    
+
     bottom: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -86,26 +86,32 @@
     &:hover{
         box-shadow: 1px 1px 10px black;
     }
+    transition: all 0.5s;
 }
 .btn-like{
     background-color: rgb(212, 235, 212);
+    transition: all 0.5s;
     &:hover{
         background-color: rgb(175, 233, 175);
+        transition: all 0.5s;
     }
 }
 .btn-delete{
     background-color:rgb(224, 199, 199);
+    transition: all 0.5s;
     &:hover{
         background-color: rgb(224, 165, 165);
+        transition: all 0.5s;
     }
 }
 
 .btn__active{
     background-color: rgb(151, 236, 151);
-  
+    transition: all 0.5s;
 }
 
 .cards__active{
     background-color: rgb(217, 240, 217);
     box-shadow: 1px 1px 10px rgb(98, 238, 98);
+    transition: all 0.5s;
 }

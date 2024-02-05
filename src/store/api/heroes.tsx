@@ -15,9 +15,9 @@ export const heroesApi = createApi({
         getHeroById: builder.query<IHero, number>({
             query: (id) => `characters/${id}?apikey=${API_KEY}`,
             providesTags: ['Heroes']
-        }),
+        }), 
 
     })
-});
+}); 
 
 export const { useGetAllHeroesQuery, useGetHeroByIdQuery } = heroesApi;

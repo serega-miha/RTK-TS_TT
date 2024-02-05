@@ -1,10 +1,14 @@
+.cards-content{
+	margin: 0 auto;
+}
 
 
 .cards-list{
-    padding: 20px;
+    padding: 30px;
 
     // display: flex;
     // flex-wrap: wrap;
+
     gap: 20px;
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr; 
@@ -83,3 +87,5 @@
 	filter: grayscale(100%);
 	opacity: 0.6;
 }
+
+

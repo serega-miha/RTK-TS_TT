@@ -7,7 +7,7 @@ const HeroPage = () => {
     const { id } = useParams<{ id?: string }>();
     const { data: dataHeroById, isLoading, isSuccess, error } = useGetHeroByIdQuery(Number(id));
 
-    let content;
+    let content; 
     if (isLoading) {
         return content = <h2>Loading...</h2>
     } else if (isSuccess) {

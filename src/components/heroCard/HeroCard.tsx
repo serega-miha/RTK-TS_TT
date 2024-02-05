@@ -8,7 +8,7 @@ interface Iprops {
     onIdDelete: Function;
     addIdLike: Function;
 
-}
+} 
 
 const HeroCard = ({ data, onIdDelete, addIdLike }: Iprops) => {
     const [like, setLike] = useState(false)
@@ -36,7 +36,7 @@ const HeroCard = ({ data, onIdDelete, addIdLike }: Iprops) => {
     }
 
     const onLike = (id: number) => {
-        addIdLike(id);
+        addIdLike(id, like);
         setLike(!like)
     }
 
