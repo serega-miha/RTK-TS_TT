@@ -2,6 +2,7 @@
   "name": "rtk-ts-tt",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://serega-miha.github.io/RTK-TS_TT",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
     "@testing-library/jest-dom": "^5.17.0",
@@ -23,6 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "gh-pages -d -build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
