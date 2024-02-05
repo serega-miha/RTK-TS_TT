@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/RTK-TS_TT/static/css/main.7ff7da61.css",
+    "main.js": "/RTK-TS_TT/static/js/main.967c3258.js",
+    "index.html": "/RTK-TS_TT/index.html",
+    "main.7ff7da61.css.map": "/RTK-TS_TT/static/css/main.7ff7da61.css.map",
+    "main.967c3258.js.map": "/RTK-TS_TT/static/js/main.967c3258.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ff7da61.css",
+    "static/js/main.967c3258.js"
+  ]
+}
